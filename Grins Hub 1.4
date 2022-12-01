@@ -1,0 +1,577 @@
+-- Gui to Lua
+-- Version: 1.4
+-- Made by Grin
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local back = Instance.new("Frame")
+local scripts = Instance.new("Frame")
+local SuperHuman = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local teleportto = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Player = Instance.new("TextBox")
+local UICorner_3 = Instance.new("UICorner")
+local fly = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local etonoclip = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Tptool = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local home = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_9 = Instance.new("UICorner")
+local UICorner_10 = Instance.new("UICorner")
+local Settings = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local Settingsgui = Instance.new("Frame")
+local welcome = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+back.Name = "back"
+back.Parent = ScreenGui
+back.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+back.Position = UDim2.new(0.332831323, 0, 0.375, 0)
+back.Size = UDim2.new(0, 451, 0, 258)
+back.Active = true
+scripts.Name = "scripts"
+scripts.Parent = back
+scripts.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+scripts.Position = UDim2.new(0.414738357, 0, 0.15891473, 0)
+scripts.Size = UDim2.new(0, 251, 0, 209)
+scripts.Active = true
+SuperHuman.Name = "SuperHuman"
+SuperHuman.Parent = scripts
+SuperHuman.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+SuperHuman.Position = UDim2.new(0.506789267, 0, 0.0542801507, 0)
+SuperHuman.Size = UDim2.new(0, 113, 0, 50)
+SuperHuman.Font = Enum.Font.SourceSansBold
+SuperHuman.Text = "SuperHuman"
+SuperHuman.TextColor3 = Color3.fromRGB(255, 255, 255)
+SuperHuman.TextScaled = true
+SuperHuman.TextSize = 14.000
+SuperHuman.TextWrapped = true
+SuperHuman.Active = true
+UICorner.Parent = SuperHuman
+
+teleportto.Name = "teleport to"
+teleportto.Parent = scripts
+teleportto.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+teleportto.Position = UDim2.new(0.038387794, 0, 0.370069623, 0)
+teleportto.Size = UDim2.new(0, 113, 0, 50)
+teleportto.Font = Enum.Font.SourceSansBold
+teleportto.Text = "Teleport to"
+teleportto.TextColor3 = Color3.fromRGB(255, 255, 255)
+teleportto.TextScaled = true
+teleportto.TextSize = 14.000
+teleportto.TextWrapped = true
+teleportto.Active = true
+UICorner_2.Parent = teleportto
+
+Player.Name = "Player"
+Player.Parent = scripts
+Player.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Player.Position = UDim2.new(0.505576193, 0, 0.368421048, 0)
+Player.Size = UDim2.new(0, 113, 0, 50)
+Player.Font = Enum.Font.SourceSansBold
+Player.Text = "Type exact name and display names dont work"
+Player.TextColor3 = Color3.fromRGB(255, 255, 255)
+Player.TextScaled = true
+Player.TextSize = 14.000
+Player.TextWrapped = true
+Player.Active = true
+UICorner_3.Parent = Player
+
+fly.Name = "fly"
+fly.Parent = scripts
+fly.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+fly.Position = UDim2.new(0.0379999988, 0, 0.0544210672, 0)
+fly.Size = UDim2.new(0, 113, 0, 50)
+fly.Font = Enum.Font.SourceSansBold
+fly.Text = "Fly"
+fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+fly.TextScaled = true
+fly.TextSize = 14.000
+fly.TextWrapped = true
+fly.Active = true
+UICorner_4.Parent = fly
+
+etonoclip.Name = "e to noclip"
+etonoclip.Parent = scripts
+etonoclip.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+etonoclip.Position = UDim2.new(0.038387794, 0, 0.681074381, 0)
+etonoclip.Size = UDim2.new(0, 113, 0, 50)
+etonoclip.Font = Enum.Font.SourceSansBold
+etonoclip.Text = "E to Noclip"
+etonoclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+etonoclip.TextScaled = true
+etonoclip.TextSize = 14.000
+etonoclip.TextWrapped = true
+etonoclip.Active = true
+UICorner_5.Parent = etonoclip
+
+Tptool.Name = "Tp tool"
+Tptool.Parent = scripts
+Tptool.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Tptool.Position = UDim2.new(0.504523277, 0, 0.681074381, 0)
+Tptool.Size = UDim2.new(0, 113, 0, 50)
+Tptool.Font = Enum.Font.SourceSansBold
+Tptool.Text = "Click to TP"
+Tptool.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tptool.TextScaled = true
+Tptool.TextSize = 14.000
+Tptool.TextWrapped = true
+Tptool.Active = true
+UICorner_6.Parent = Tptool
+
+TextButton.Parent = back
+TextButton.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+TextButton.Position = UDim2.new(0.0368771441, 0, 0.452742934, 0)
+TextButton.Size = UDim2.new(0, 105, 0, 51)
+TextButton.Font = Enum.Font.SourceSansBold
+TextButton.Text = "Scripts"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+TextButton.Active = true
+UICorner_7.Parent = TextButton
+
+home.Name = "home"
+home.Parent = back
+home.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+home.Position = UDim2.new(0.0368771441, 0, 0.196928993, 0)
+home.Size = UDim2.new(0, 105, 0, 51)
+home.Font = Enum.Font.SourceSansBold
+home.Text = "Home"
+home.TextColor3 = Color3.fromRGB(255, 255, 255)
+home.TextScaled = true
+home.TextSize = 14.000
+home.TextWrapped = true
+home.Active = true
+UICorner_8.Parent = home
+
+TextLabel.Parent = back
+TextLabel.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 451, 0, 31)
+TextLabel.ZIndex = 2
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Grins Hub V1.4         V to Hide"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+TextLabel.Active = true
+UICorner_9.Parent = TextLabel
+
+UICorner_10.CornerRadius = UDim.new(0, 9)
+UICorner_10.Parent = back
+
+Settings.Name = "Settings"
+Settings.Parent = back
+Settings.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+Settings.Position = UDim2.new(0.034782704, 0, 0.708302379, 0)
+Settings.Size = UDim2.new(0, 105, 0, 51)
+Settings.ZIndex = 3
+Settings.Font = Enum.Font.SourceSansBold
+Settings.Text = "Settings"
+Settings.TextColor3 = Color3.fromRGB(255, 255, 255)
+Settings.TextScaled = true
+Settings.TextSize = 14.000
+Settings.TextWrapped = true
+Settings.Active = true
+UICorner_11.Parent = Settings
+
+Settingsgui.Name = "Settingsgui"
+Settingsgui.Parent = back
+Settingsgui.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+Settingsgui.Position = UDim2.new(0.414738357, 0, 0.15891473, 0)
+Settingsgui.Size = UDim2.new(0, 251, 0, 209)
+Settingsgui.Visible = false
+Settingsgui.Active = true
+welcome.Name = "welcome"
+welcome.Parent = back
+welcome.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+welcome.Position = UDim2.new(0.414634138, 0, 0.15891473, 0)
+welcome.Size = UDim2.new(0, 251, 0, 209)
+welcome.Font = Enum.Font.SourceSansBold
+welcome.Text = "Welcome to Grins Hub, Credits to Grin and Whoever I Stole the Scripts From!"
+welcome.TextColor3 = Color3.fromRGB(255, 255, 255)
+welcome.TextScaled = true
+welcome.TextSize = 14.000
+welcome.TextWrapped = true
+welcome.Active = true
+-- Scripts:
+
+local function OMUTGN_fake_script() -- back.LocalScript 
+	local script = Instance.new('LocalScript', back)
+
+	local FrameObject = script.Parent -- Change Stats to whatever your frame is called
+	local Open = false
+	
+	
+	local UserInputService = game:GetService("UserInputService")
+	
+	UserInputService.InputBegan:Connect(function(Input, gameprocess)
+		if not gameprocess then
+			if Input.KeyCode == Enum.KeyCode.V then -- Change M to your prefered keybind
+				if Open then
+					Open = false
+					script.Parent.Visible = true -- Change Stats to whatever your frame is called
+				else
+					Open = true
+					script.Parent.Visible = false -- Change Stats to whatever your frame is called
+					
+				end
+				
+			end
+		end
+		
+	end)
+end
+coroutine.wrap(OMUTGN_fake_script)()
+local function DXGDS_fake_script() -- back.Mobe 
+	local script = Instance.new('LocalScript', back)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(DXGDS_fake_script)()
+local function BBKM_fake_script() -- SuperHuman.LocalScript 
+	local script = Instance.new('LocalScript', SuperHuman)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+		local plr = game.Players.LocalPlayer
+	
+		plr.Character.Humanoid.JumpPower = 100
+	end)
+end
+coroutine.wrap(BBKM_fake_script)()
+local function ESRR_fake_script() -- teleportto.LocalScript 
+	local script = Instance.new('LocalScript', teleportto)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local p2 = script.Parent.Parent.Player.Text
+		local pos = p1.CFrame
+		p1.CFrame = game.Players:WaitForChild(p2).Character.HumanoidRootPart.CFrame
+	end)
+end
+coroutine.wrap(ESRR_fake_script)()
+local function IRVVOXF_fake_script() -- fly.FlyScript 
+	local script = Instance.new('LocalScript', fly)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Settings = {
+	
+			Speed = 5,
+			SprintSpeed = 30,
+			ToggleKey = Enum.KeyCode.LeftAlt,
+			SprintKey = Enum.KeyCode.LeftControl,
+	
+			ForwardKey = Enum.KeyCode.W,
+			LeftKey = Enum.KeyCode.A,
+			BackwardKey = Enum.KeyCode.S,
+			RightKey = Enum.KeyCode.D,
+			UpKey = Enum.KeyCode.E,
+			DownKey = Enum.KeyCode.Q,
+	
+		}
+	
+		
+		local Distance = Instance.new("TextLabel",Screen)
+		Distance.BackgroundTransparency = 1
+		Distance.Size = UDim2.new(0,10,0,10)
+		Distance.ZIndex = 2
+		Distance.Text = "0"
+		Distance.TextStrokeTransparency = .5
+		Distance.TextSize = 20
+		Distance.TextStrokeColor3 = Color3.fromRGB(33, 33, 33)
+		Distance.Font = Enum.Font.Gotham
+		Distance.TextColor3 = Color3.new(1,1,1)
+		Distance.TextXAlignment = Enum.TextXAlignment.Left
+		Distance.TextYAlignment = Enum.TextYAlignment.Top
+	
+	
+		local Mouse = game.Players.LocalPlayer:GetMouse()
+		local Direction = Vector3.new(0,0,0)
+		local InterpolatedDir = Direction
+		local Tilt = 0
+		local InterpolatedTilt = Tilt
+		local RunService = game:GetService("RunService")
+		local Toggled = false
+		local Sprinting = false
+		local CameraPos = game.Workspace.CurrentCamera.CFrame.Position
+	
+		pcall(function()
+			game.Players.LocalPlayer.DevCameraOcclusionMode = Enum.DevCameraOcclusionMode.Invisicam	
+		end)
+	
+		function Lerp(a, b, t)
+			return a + (b - a) * t
+		end
+	
+		local LastPos = nil
+	
+		function KeyHandler(actionName, userInputState)
+			if true and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+				if actionName == "Toggle" and userInputState == Enum.UserInputState.Begin then
+					Toggled = not Toggled
+					if Toggled then
+						LastPos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+						--game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+						game.Players.LocalPlayer.Character.Humanoid.PlatformStand = true 
+					else
+						LastPos = nil
+						game.Players.LocalPlayer.Character.Humanoid.PlatformStand = false
+						--game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+					end
+				elseif actionName == "Forward" then
+					Tilt = userInputState == Enum.UserInputState.Begin and -20 or 0
+					Direction = Vector3.new(Direction.x,Direction.y,userInputState == Enum.UserInputState.Begin and -1 or 0)
+				elseif actionName == "Left" then
+					Direction = Vector3.new(userInputState == Enum.UserInputState.Begin and -1 or 0,Direction.y,Direction.z)
+				elseif actionName == "Backward" then
+					Tilt = userInputState == Enum.UserInputState.Begin and 20 or 0
+					Direction = Vector3.new(Direction.x,Direction.y,userInputState == Enum.UserInputState.Begin and 1 or 0)
+				elseif actionName == "Right" then
+					Direction = Vector3.new(userInputState == Enum.UserInputState.Begin and 1 or 0,Direction.y,Direction.z)
+				elseif actionName == "Up" then
+					Direction = Vector3.new(Direction.x,userInputState == Enum.UserInputState.Begin and 1 or 0,Direction.z)
+				elseif actionName == "Down" then
+					Direction = Vector3.new(Direction.x,userInputState == Enum.UserInputState.Begin and -1 or 0,Direction.z)
+				elseif actionName == "Sprint" then
+					Sprinting = userInputState == Enum.UserInputState.Begin
+				end
+			end
+		end
+	
+	
+	
+		game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+	
+			if inputObject.KeyCode == Settings.ToggleKey then
+				KeyHandler("Toggle", Enum.UserInputState.Begin, inputObject)
+			elseif inputObject.KeyCode == Settings.ForwardKey then
+				KeyHandler("Forward", Enum.UserInputState.Begin, inputObject)
+			elseif inputObject.KeyCode == Settings.LeftKey then
+				KeyHandler("Left", Enum.UserInputState.Begin, inputObject)
+			elseif inputObject.KeyCode == Settings.BackwardKey then
+				KeyHandler("Backward", Enum.UserInputState.Begin, inputObject)
+			elseif inputObject.KeyCode == Settings.RightKey then
+				KeyHandler("Right", Enum.UserInputState.Begin, inputObject)
+			elseif inputObject.KeyCode == Settings.UpKey then	
+				KeyHandler("Up", Enum.UserInputState.Begin, inputObject)
+			elseif inputObject.KeyCode == Settings.DownKey then
+				KeyHandler("Down", Enum.UserInputState.Begin, inputObject)
+			elseif inputObject.KeyCode == Settings.SprintKey then
+				KeyHandler("Sprint", Enum.UserInputState.Begin, inputObject)
+			end
+	
+	
+		end)
+	
+	
+		game:GetService("UserInputService").InputEnded:connect(function(inputObject, gameProcessedEvent)
+	
+			if inputObject.KeyCode == Settings.ToggleKey then
+				KeyHandler("Toggle", Enum.UserInputState.End, inputObject)
+			elseif inputObject.KeyCode == Settings.ForwardKey then
+				KeyHandler("Forward", Enum.UserInputState.End, inputObject)
+			elseif inputObject.KeyCode == Settings.LeftKey then
+				KeyHandler("Left", Enum.UserInputState.End, inputObject)
+			elseif inputObject.KeyCode == Settings.BackwardKey then
+				KeyHandler("Backward", Enum.UserInputState.End, inputObject)
+			elseif inputObject.KeyCode == Settings.RightKey then
+				KeyHandler("Right", Enum.UserInputState.End, inputObject)
+			elseif inputObject.KeyCode == Settings.UpKey then	
+				KeyHandler("Up", Enum.UserInputState.End, inputObject)
+			elseif inputObject.KeyCode == Settings.DownKey then
+				KeyHandler("Down", Enum.UserInputState.End, inputObject)
+			elseif inputObject.KeyCode == Settings.SprintKey then
+				KeyHandler("Sprint", Enum.UserInputState.End, inputObject)
+			end
+	
+	
+		end)
+	
+	
+		RunService.RenderStepped:Connect(function()
+			if Toggled and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")  then
+				for i,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+					if v:IsA("BasePart") then
+						v.Velocity = Vector3.new(0,0,0)
+					end
+				end
+				local RootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+				if LastPos then
+					Distance.Text = math.floor((LastPos-RootPart.Position).Magnitude+.5)
+					if (LastPos-RootPart.Position).Magnitude >= 350 then
+						Distance.TextColor3 = Color3.new(1,0,0)
+					else
+						Distance.TextColor3 = Color3.new(1,1,1)	
+					end
+				else
+					Distance.TextColor3 = Color3.new(1,1,1)
+					Distance.Text = 0
+				end
+				InterpolatedDir = InterpolatedDir:Lerp((Direction * (Sprinting and Settings.SprintSpeed or Settings.Speed)),.2)
+				InterpolatedTilt = Lerp(InterpolatedTilt ,Tilt* (Sprinting and 2 or 1),Tilt == 0 and .2 or .1)
+				RootPart.CFrame = RootPart.CFrame:Lerp(CFrame.new(RootPart.Position,RootPart.Position + Mouse.UnitRay.Direction) * CFrame.Angles(0,math.rad(00),0) * CFrame.new(InterpolatedDir)  * CFrame.Angles(math.rad(InterpolatedTilt),0,0),.2)
+			else
+				Distance.TextColor3 = Color3.new(1,1,1)
+				Distance.Text = 0
+			end	
+		end)
+	
+	end)
+end
+coroutine.wrap(IRVVOXF_fake_script)()
+local function PVKHRB_fake_script() -- etonoclip.LocalScript 
+	local script = Instance.new('LocalScript', etonoclip)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local StealthMode = true -- If game has an anticheat that checks the logs
+	
+		local Indicator
+	
+		if not StealthMode then
+			local ScreenGui = Instance.new("ScreenGui", game.CoreGui)
+			print("NOCLIP: Press E to Activate")
+			Indicator = Instance.new("TextLabel", ScreenGui)
+			Indicator.AnchorPoint = Vector2.new(0, 1)
+			Indicator.Position = UDim2.new(0, 0, 1, 0)
+			Indicator.Size = UDim2.new(0, 200, 0, 50)
+			Indicator.BackgroundTransparency = 1
+			Indicator.TextScaled = true
+			Indicator.TextStrokeTransparency = 0
+			Indicator.TextColor3 = Color3.new(0, 0, 0)
+			Indicator.TextStrokeColor3 = Color3.new(1, 1, 1)
+			Indicator.Text = "Noclip: Enabled"
+		end
+	
+		local noclip = false
+		local player = game.Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+	
+		local mouse = player:GetMouse()
+	
+		mouse.KeyDown:Connect(function(key)
+			if key == "e" then
+				noclip = not noclip
+	
+				if not StealthMode then
+					Indicator.Text = "Noclip: " .. (noclip and "Enabled" or "Disabled")
+				end
+			end
+		end)
+	
+		while true do
+			player = game.Players.LocalPlayer
+			character = player.Character
+	
+			if noclip then
+				for _, v in pairs(character:GetDescendants()) do
+					pcall(function()
+						if v:IsA("BasePart") then
+							v.CanCollide = false
+						end
+					end)
+				end
+			end
+	
+			game:GetService("RunService").Stepped:wait()
+		end
+	end)
+end
+coroutine.wrap(PVKHRB_fake_script)()
+local function KZOIIT_fake_script() -- Tptool.LocalScript 
+	local script = Instance.new('LocalScript', Tptool)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local mouse = game.Players.LocalPlayer:GetMouse()
+		local tool = Instance.new("Tool")
+		tool.RequiresHandle = false
+		tool.Name = "Equip to Click TP"
+		tool.Activated:connect(function()
+			local pos = mouse.Hit+Vector3.new(0,2.5,0)
+			pos = CFrame.new(pos.X,pos.Y,pos.Z)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+		end)
+		tool.Parent = game.Players.LocalPlayer.Backpack
+	end)
+end
+coroutine.wrap(KZOIIT_fake_script)()
+local function URGOLV_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.scripts.Visible = true
+		script.Parent.Parent.welcome.Visible = false
+		script.Parent.Parent.Settingsgui.Visible = false
+	end)
+	
+end
+coroutine.wrap(URGOLV_fake_script)()
+local function FPTAZ_fake_script() -- home.LocalScript 
+	local script = Instance.new('LocalScript', home)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.scripts.Visible = false
+		script.Parent.Parent.welcome.Visible = true
+		script.Parent.Parent.Settingsgui.Visible = false
+	end)
+	
+end
+coroutine.wrap(FPTAZ_fake_script)()
+local function WXVTNPC_fake_script() -- Settings.LocalScript 
+	local script = Instance.new('LocalScript', Settings)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.scripts.Visible = false
+		script.Parent.Parent.welcome.Visible = false
+		script.Parent.Parent.Settingsgui.Visible = true
+	end)
+end
+coroutine.wrap(WXVTNPC_fake_script)()
